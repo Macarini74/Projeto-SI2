@@ -4,7 +4,7 @@ import sqlite3
 from bd import NOME_BANCO, NOME_TABELA, criar_banco_e_tabela 
 
 def extract_data():
-    lista_arquivos = ['./Data/2022.csv', './Data/2023.csv', './Data/2024.csv']
+    lista_arquivos = ['../Data/2022.csv', '../Data/2023.csv', '../Data/2024.csv']
 
     dataframes = []
 
@@ -46,10 +46,3 @@ def insert_df_into_bd(df_para_inserir):
     finally:
         if conn:
             conn.close()
-
-# Exemplo de como você usaria isso no seu código principal:
-if __name__ == "__main__":
-    
-    df = extract_data()
-
-    insert_df_into_bd(df)
