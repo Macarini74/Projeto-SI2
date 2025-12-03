@@ -1,4 +1,4 @@
-from backenzo.bd import get_db_connection
+from banco.bd import get_db_connection
 import pandas as pd
 
 def execute_query(query, fetch_results=True):

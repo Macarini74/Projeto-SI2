@@ -1,7 +1,7 @@
 import streamlit as st
 from pages.dash_geral import render_dash
-from pages.dash_pred import render_pred
-from backenzo import insert_data
+from pages.dash_pred import render_graphs
+from banco import insert_data
 
 insert_data()
 
@@ -14,7 +14,7 @@ st.set_page_config(
 
 pg = st.navigation([
     st.Page(render_dash, title="Dashboard Geral", icon="📊"),
-    st.Page(render_pred, title="Predições", icon="📈"),
+    st.Page(render_graphs, title="Predições", icon="📈"),
 ])
 
 pg.run()
