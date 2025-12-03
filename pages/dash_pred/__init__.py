@@ -8,6 +8,8 @@ def render_graphs():
     st.divider()
 
     with st.container(border=True):
+
+        st.markdown("<h3 style='text-align: center;'>Algoritmos de Classificação</h3>", unsafe_allow_html=True)
         col1, col2, col3 = st.columns(3)
 
         with col1:
@@ -22,6 +24,8 @@ def render_graphs():
         class_rank()
 
     with st.container(border=True):
+
+        st.markdown("<h3 style='text-align: center;'>Algoritmos de Regressão</h3>", unsafe_allow_html=True)
         
         col1, col2, col3 = st.columns(3)
 
@@ -33,15 +37,13 @@ def render_graphs():
         
         with col3:
             ran_for()
-    
-    with st.container(border=True):
 
-        col1, col2 = st.columns(2)
+        col4, col5 = st.columns(2)
 
-        with col1:
+        with col4:
             ser_temp()
 
-        with col2:
+        with col5:
             pred()
     
     
