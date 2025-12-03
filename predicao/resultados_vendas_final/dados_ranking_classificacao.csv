@@ -1,0 +1,4 @@
+Modelo,Acuracia
+Logistic Regression,0.5886510786281772
+Random Forest,0.5976985495773135
+KNN,0.5726766377336086

@@ -58,3 +58,18 @@ streamlit run main.py
 ````
 
 A aplicação será aberta automaticamente no seu navegador. Caso isso não ocorra, acesse a URL exibida no seu terminal (geralmente http://localhost:8501).
+
+### Execução dos Algoritmos de Predição 
+Para rodar os algoritmos específicos de previsão (predição), como modelos de Regressão ou Séries Temporais, siga os passos abaixo:
+
+Navegue até o diretório de predição:
+
+``` bash
+cd predicao
+```
+
+Execute o script de predição:
+
+``` bash
+python pred.py
+```
