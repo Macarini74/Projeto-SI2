@@ -21,6 +21,7 @@ Primeiro, clone este repositório para a sua máquina local:
 ```bash
 git clone [URL_DO_SEU_REPOSITORIO]
 cd [NOME_DO_SEU_REPOSITORIO]
+````
 
 ### 2. Configurar o Ambiente Virtual (venv)
 
@@ -31,12 +32,14 @@ cd [NOME_DO_SEU_REPOSITORIO]
 ```bash
 # Cria o ambiente virtual
 python -m venv venv
+````
 
 # Ativa o ambiente virtual (Linux/macOS)
 source venv/bin/activate
 
 # Ativa o ambiente virtual (Windows)
 .\venv\Scripts\activate
+````
 
 ### 3. Instalar as Dependências
 
@@ -44,6 +47,7 @@ Com o ambiente virtual ativado, utilize o arquivo `requirements.txt` para instal
 
 ```bash
 pip install -r requirements.txt
+````
 
 ### 4. Rodar a Aplicação
 
@@ -51,5 +55,6 @@ Para iniciar o projeto, execute o comando do Streamlit na raiz do diretório (on
 
 ```bash
 streamlit run main.py
+````
 
 A aplicação será aberta automaticamente no seu navegador. Caso isso não ocorra, acesse a URL exibida no seu terminal (geralmente http://localhost:8501).
